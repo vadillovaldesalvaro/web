@@ -11537,7 +11537,7 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(30px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
@@ -11546,7 +11546,7 @@ pre .code {
 
 .header .header-content .header-mono {
   letter-spacing: 5px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
 }
