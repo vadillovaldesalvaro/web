@@ -11537,7 +11537,7 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(30px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
