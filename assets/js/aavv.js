@@ -29,6 +29,20 @@ $(document).ready(function(){
             });
         } 
     });
+    // Calculating years worked and studied programming
+    const currentYear = new Date().getFullYear();
+
+    // Define start years
+    const startWorkYear = 2022;
+    const startStudyYear = 2020;
+
+    // Calculate years in development and years studied programming
+    const yearsWorked = currentYear - startWorkYear;
+    const yearsStudied = currentYear - startStudyYear;
+
+    // Update the HTML elements with the calculated values
+    $('#yearsWorked').text(yearsWorked >= 1 ? yearsWorked + "+" : "1+");
+    $('#yearsStudied').text(yearsStudied >= 1 ? yearsStudied + "+" : "1+");
 });
 
 // protfolio filters
