@@ -395,30 +395,7 @@
 
     <!-- js -->
     <script src="assets/js/aavv.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@formspree/core@3.0.0/dist/formspree.min.js"></script>
-    <script>
-        const form = document.querySelector('#contact-form');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
 
-            const formData = new FormData(form);
-
-            fetch('https://formspree.io/f/xyzypvqj', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    if (response.ok) {
-                        alert("Message sent!");
-                    } else {
-                        alert("Error sending message.");
-                    }
-                })
-                .catch(error => {
-                    alert("Error sending message.");
-                });
-        });
-    </script>
 
 </body>
 </html>
