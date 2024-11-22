@@ -313,7 +313,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Contact Us</h4>
-                        <form id="contact-form" action="https://formspree.io/f/xyzypvqj" method="POST">
+                        <form id="contact-form" method="POST">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -383,6 +383,30 @@
 
     <!-- js -->
     <script src="assets/js/aavv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@formspree/core@3.0.0/dist/formspree.min.js"></script>
+    <script>
+        const form = document.querySelector('#contact-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('https://formspree.io/f/xyzypvqj', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Message sent!");
+                    } else {
+                        alert("Error sending message.");
+                    }
+                })
+                .catch(error => {
+                    alert("Error sending message.");
+                });
+        });
+    </script>
 
 </body>
 </html>
