@@ -66,23 +66,12 @@
                     <i class="ti-user small"></i> Who am I ?</h3>
                 <span class="line mb-2"></span>
                 <h5 class="mb-3">A Web Developer and PhP Programmer</h5>
-                <p class="mt-20"> I am a passionate PHP programmer and web developer with a focus on creating innovative and efficient solutions for online projects.
-                     From a young age, I discovered my fascination with technology and how it can positively impact our lives and the world around us.
-                     <br>
-                     With a strong background in programming and web development, I have spent years honing my skills in various technologies like HTML, CSS, JavaScript, and of course, PHP. 
-                     I have worked on a variety of projects, from small web applications to complex content management systems.
-                    <br>
-                    My approach goes beyond just writing code. I strive to understand the needs of the end user and work closely with multidisciplinary teams to 
-                    design and develop solutions that are not only functional but also intuitive and visually appealing.
-                    <br>
-                    I consider myself a lifelong learner and am always looking for new opportunities to expand my knowledge and skills in the world of web development. 
-                    I love tackling challenges and finding creative ways to solve complex problems.
-                    <br>
-                     I am excited to continue growing and contributing to the exciting world of web development and programming.
-                     I look forward to collaborating with you on future projects and continuing to learn together!
-                     <br>                    
-                     Thank you for taking the time to get to know me a little better!</p>
-                     <a href="assets/files/AAVVCV.pdf" download="AlvaroVVCCVV2024.pdf" class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Download CV</a>
+                <p class="mt-20">
+                <p class="mt-20">I am a passionate PHP programmer and web developer with a focus on creating innovative
+                and efficient solutions for online projects.</p>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#whoAmIModal">
+                    Learn More About Me
+                </button>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light"><i class="ti-save "></i> Personal Info</h3>
@@ -358,6 +347,29 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="whoAmIModal" tabindex="-1" aria-labelledby="whoAmILabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="whoAmILabel">Who am I?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>I am a passionate PHP programmer and web developer with a focus on creating innovative and efficient solutions for online projects. From a young age, I discovered my fascination with technology and how it can positively impact our lives and the world around us.</p>
+                    <p>With a strong background in programming and web development, I have spent years honing my skills in various technologies like HTML, CSS, JavaScript, and of course, PHP. I have worked on a variety of projects, from small web applications to complex content management systems.</p>
+                    <p>My approach goes beyond just writing code. I strive to understand the needs of the end user and work closely with multidisciplinary teams to design and develop solutions that are not only functional but also intuitive and visually appealing.</p>
+                    <p>I consider myself a lifelong learner and am always looking for new opportunities to expand my knowledge and skills in the world of web development. I love tackling challenges and finding creative ways to solve complex problems.</p>
+                    <p>I am excited to continue growing and contributing to the exciting world of web development and programming. I look forward to collaborating with you on future projects and continuing to learn together!</p>
+                    <p>Thank you for taking the time to get to know me a little better!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="assets/files/AAVVCV.pdf" download="AlvaroVVCCVV2024.pdf" class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Download CV</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
