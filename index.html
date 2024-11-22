@@ -398,12 +398,15 @@
                 .then(response => {
                     if (response.ok) {
                         alert("Message sent!");
+                        location.reload();
                     } else {
                         alert("Error sending message.");
+                        location.reload();
                     }
                 })
                 .catch(error => {
                     alert("Error sending message.");
+                    location.reload();
                 });
         });
     </script>
