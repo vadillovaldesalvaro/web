@@ -1,0 +1,33 @@
+name: 🚀 Deploy Portafolio a Arsys
+
+on:
+  push:
+    branches:
+      - main  # Se ejecuta solo cuando subes cambios a main
+
+jobs:
+  web-deploy:
+    name: 🚚 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # Si usas Tailwind o procesos de build, descomenta esto:
+      # - name: 🏗️ Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+      # - name: 📦 Install & Build
+      #   run: |
+      #     npm install
+      #     npm run build 
+
+      - name: 📂 Sync files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Local-dir: ./dist/ # Si usas build (Astro/Vite), apunta a la carpeta de salida
+          server-dir: /httpdocs/ # O la carpeta que Arsys use para el dominio (suele ser / o /html)
