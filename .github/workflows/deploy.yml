@@ -29,5 +29,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Local-dir: ./dist/ # Si usas build (Astro/Vite), apunta a la carpeta de salida
-          server-dir: /httpdocs/ # O la carpeta que Arsys use para el dominio (suele ser / o /html)
+          server-dir: /httpdocs/ 
+          # Parámetros críticos para Arsys:
+          protocol: ftp
+          port: 21
+          timeout: 60000 # Aumentamos a 1 minuto el timeout
+          passive: true
