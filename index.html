@@ -1,406 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth dark">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="AAVV Web">
-    <meta name="author" content="Devcrud">
-    <title>AVV Web Page | PHP Programmer | WEB Developer</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/aavv.css">
-    <link rel="icon" href="assets/imgs/AvvWeb.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Vadillo | Backend Architect & Systems Integrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .bg-grid { background-image: radial-gradient(#1e293b 1px, transparent 1px); background-size: 30px 30px; }
+        .text-gradient { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-glow:hover { box-shadow: 0 0 20px rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.4); }
+    </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <header class="header">
-        <div class="container">  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, my name is </h4>
-                <h1 class="header-title">Alvaro Vadillo Valdés</h1>
-                <h6 class="header-mono" >PHP Programmer | Web Developer</h6>
+<body class="text-slate-300 selection:bg-indigo-500/30 bg-grid">
+
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between h-20 items-center">
+            <div class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-600/20 group-hover:rotate-12 transition-transform">AV</div>
+                <span class="mono font-bold text-xl text-white tracking-tighter">VADILLO<span class="text-indigo-500">.dev</span></span>
             </div>
-        </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Álvaro Vadillo Valdés</h5>
-                        <div class="brand-subtitle"> PHP Programmer | Web Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#service" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+            <div class="hidden md:flex items-center space-x-10 mono text-[11px] uppercase tracking-[0.2em]">
+                <a href="#experiencia" class="hover:text-indigo-400 transition">Trayectoria</a>
+                <a href="#ecosistema" class="hover:text-indigo-400 transition">Ecosistema</a>
+                <a href="#stack" class="hover:text-indigo-400 transition">Stack</a>
+                <a href="mailto:vadillovaldesalvaro@gmail.com" class="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20">Let's Talk</a>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">
-                    <i class="ti-user small"></i> Who am I ?</h3>
-                <span class="line mb-2"></span>
-                <h5 class="mb-3">A Web Developer and PhP Programmer</h5>
-                <p class="mt-20">
-                <p class="mt-20">I am a passionate PHP programmer and web developer with a focus on creating innovative
-                and efficient solutions for online projects.</p>
-
-                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#whoAmIModal">
-                    Learn More About Me
-                </button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light"><i class="ti-save "></i> Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> : vadillovaldesalvaro@gmail.com</li>
-                    <li><span>Phone</span> : (+34) 695 635 553</li>
-                    <li><span><i class="ti-linkedin small"></i></span> : <a href="https://www.linkedin.com/in/alvaro-vadillo-valdes/" target="_blank">Click on me!</a> </li>
-                    <li><span>Address</span>: Madrid, Spain</li>
-                </ul>
-                <a href="#contact"  class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Get in touch!</a>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light"> <i class="ti-pulse "></i> My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Interterritorial Prevención de Riesgos</h6>
-                        <p class="subtitle"> Sep 2022 - Now</p>
-                        <hr>
+    <header class="relative pt-20 pb-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/20 px-4 py-2 rounded-full mb-8">
+                        <span class="mono text-xs text-indigo-400 font-bold uppercase tracking-widest italic">PHP Developer | Backend | Symfony</span>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-8 leading-[0.9]">
+                        Sistemas que <br><span class="text-gradient">escalan.</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-10 max-w-xl leading-relaxed font-light">
+                        Actualmente involucrado en el desarrollo en <span class="text-white font-semibold">CQM Rewards</span> e integrando infraestructuras críticas en <span class="text-indigo-400">IPR</span>. 
+                        Conocimiento en <b> Symfony | PHP </b>, entornos <b>Microsoft Enterprise</b> y orquestación de flujos <b>GitLab/GitHub/Bitbucket</b>.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#experiencia" class="bg-white text-slate-950 px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all">Ver Experiencia</a>
+                        <a href="#ecosistema" class="bg-slate-900 border border-slate-700 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all">Ecosistema Pro</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i> </div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6> Practices on Interterritorial Prevención de Riesgos</h6>
-                        <p class="subtitle"> Feb 2022 - May 2022</p>
-                        <hr>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-indigo-500/20 blur-3xl rounded-full"></div>
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-[2.5rem] overflow-hidden border-2 border-slate-800 shadow-3xl">
+                        <img src="assets/imgs/AvvWeb.png" alt="Álvaro Vadillo" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger"> <i class="ti-bookmark-alt "></i> My</span> Resume</h2>
-            <div class="row">
-                <!-- Expertise -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Experience</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">Sept. 2022 - Present</h6>
-                            <p>Web Developer | PHP</p>
-                            <p class="subtitle">Interterritorial de Prevención de Riesgos S.L., Madrid, Spain (Hybrid)</p>
-                            <ul>
-                                <li>Developing and maintaining internal applications using Symfony 5, applying hexagonal architecture and testing.</li>
-                                <li>Proficient in HTML, CSS, JavaScript, Bootstrap, and PHPStorm.</li>
-                                <li>Designing and consuming REST APIs.</li>
-                                <li>Managing MySQL databases.</li>
-                                <li>Participating in planning and code review meetings (CI/CD).</li>
-                                <li>Researching new technologies and tools to improve development and product quality.</li>
-                            </ul>
-                            <hr>
-                            <h6 class="title text-danger">Mar. 2022 - Jun. 2022</h6>
-                            <p>Intern</p>
-                            <p class="subtitle">IPR. PREVENCIÓN, Madrid, Spain</p>
-                            <ul>
-                                <li>Supported web development and application configuration tasks.</li>
-                            </ul>
-                        </div>
-                    </div>
+    <section id="experiencia" class="py-24 bg-slate-950/50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="mono text-indigo-500 text-sm font-bold mb-16 tracking-[0.3em] uppercase">// Trayectoria_Profesional</h2>
+            
+            <div class="space-y-20">
+                <div class="relative pl-12 border-l-2 border-indigo-600/50">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-600 shadow-[0_0_15px_rgba(79,70,229,0.5)]"></div>
+                    <span class="mono text-xs text-slate-500 mb-2 block uppercase tracking-widest text-indigo-400 font-bold">2025 - Actualidad</span>
+                    <h3 class="text-3xl font-bold text-white mb-2 italic tracking-tight">CQM Rewards</h3>
+                    <p class="text-indigo-400 font-mono text-sm mb-6">PHP Developer | Backend </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Diseño y ejecución de la plataforma de fidelización.
+                         Implementación de <b>Arquitectura Hexagonal</b> para desacoplar las reglas de negocio de los sistemas de incentivos, garantizando alta disponibilidad y consistencia de datos en tiempo real.
+                    </p>
                 </div>
 
-                <!-- Education -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">Sept. 2020 - Jun. 2022</h6>
-                            <p>Higher Vocational Training, Web Application Development</p>
-                            <p class="subtitle">IES Pio Baroja</p>
-                            <ul>
-                                <li>Configured and managed IT systems, adapting system settings to meet usage needs and criteria.</li>
-                                <li>Applied techniques and procedures related to security in systems, services, and applications, following security plans.</li>
-                                <li>Managed application servers, configuring them for web application deployment.</li>
-                                <li>Administered databases, ensuring data integrity, consistency, security, and accessibility.</li>
-                                <li>Developed web applications with database access using appropriate languages, access objects, and mapping tools.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills & Languages -->
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Domain-Driven Design (DDD)</h6>
-                            <div class="text-muted mb-3">Application of DDD principles to design solutions that clearly reflect the business domain in a modular way.</div>
-
-                            <h6>SOLID Principles</h6>
-                            <div class="text-muted mb-3">Strong understanding and application of SOLID principles to write clean, maintainable code.</div>
-
-                            <h6>Hexagonal Architecture</h6>
-                            <div class="text-muted mb-3">Development approach focused on separation of concerns and independence from external infrastructure.</div>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Spanish</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>German</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="relative pl-12 border-l-2 border-slate-800 group hover:border-indigo-600/30 transition-colors">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-800 group-hover:bg-indigo-600 transition-colors"></div>
+                    <span class="mono text-xs text-slate-500 mb-2 block uppercase tracking-widest">2022 — 2025</span>
+                    <h3 class="text-3xl font-bold text-white mb-2 italic tracking-tight">IPR (Interterriotorial Prevención de Riesgos S.L)</h3>
+                    <p class="text-indigo-400 font-mono text-sm mb-6">Web Developer | PHP </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Transformación del núcleo tecnológico de la compañía. Migración de sistemas legacy a **Symfony 7**, optimización de flujos de trabajo con **Microsoft 365 Integration** y automatización de despliegues industriales.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-dark text-center" id="service">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-calendar icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40" id="yearsWorked"></h1>
-                            <p class="text-light mb-1">Years in Development</p>
+    <section id="ecosistema" class="py-24 border-y border-slate-900 bg-slate-950/30">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-16 tracking-tight italic">Ecosistema & <span class="text-indigo-500">Collaboration</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/40 p-10 rounded-3xl border border-slate-800 card-glow transition-all">
+                    <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0L0 4v16l12 4 12-4V4L12 0zm10 18.8l-10 3.3-10-3.3V5.2l10-3.3 10 3.3v13.6z"/></svg>
+                    </div>
+                    <h4 class="text-white font-bold mb-4 italic">Microsoft 365</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Experticia en integración de APIs de Outlook, Azure AD y automatización de procesos corporativos bajo el paraguas de Microsoft.</p>
+                </div>
 
-                            <h1 class="text-danger font-weight-bold font40" id="yearsStudied"></h1>
-                            <p class="text-light mb-1">Years Studied Programming</p>
-                        </div>
+                <div class="bg-slate-900/40 p-10 rounded-3xl border border-slate-800 card-glow transition-all">
+                    <div class="w-12 h-12 bg-indigo-600/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-8v-2h8v2zm0-4h-8v-2h8v2zm0-4h-8V7h8v2z"/></svg>
                     </div>
+                    <h4 class="text-white font-bold mb-4 italic">JIRA & Atlassian</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Gestión ágil de proyectos. Dominio de Jira Software para el seguimiento de sprints y documentación técnica de alto nivel.</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">4+</h1>
-                            <p class="text-light mb-1">Projects Delivered</p>
-                        </div>
+
+                <div class="bg-slate-900/40 p-10 rounded-3xl border border-slate-800 card-glow transition-all">
+                    <div class="w-12 h-12 bg-orange-600/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24"><path d="M22.65 14.39L12 21L1.35 14.39a.84.84 0 0 1-.3-.38.8.8 0 0 1 0-.62.84.84 0 0 1 .3-.38L12 3l10.65 10.01a.84.84 0 0 1 .3.38.8.8 0 0 1 0 .62.84.84 0 0 1-.3.38z"/></svg>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-desktop icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">100%</h1>
-                            <p class="text-light mb-1">Backend Development Focus</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-medall icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">4</h1>
-                            <p class="text-light mb-1">Advanced Development Courses</p>
-                        </div>
-                    </div>
+                    <h4 class="text-white font-bold mb-4 italic">Git Multi-Platform</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Orquestación de pipelines en **GitHub**, **GitLab** y **Bitbucket**. Estrategias de branching robustas para equipos distribuidos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" >
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger"> <i class="ti-check-box"></i> My</span> Completed Courses</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <ul class="list-unstyled">
-                        <li><i class="ti-check text-danger"></i> SOLID Principles Applied - 2024</li>
-                        <li><i class="ti-check text-danger"></i> Hexagonal Architecture - 2024</li>
-                        <li><i class="ti-check text-danger"></i> Domain Modeling: Exceptions vs Errors - 2024</li>
-                        <li><i class="ti-check text-danger"></i> Artificial Intelligence Applied to the Company - 2024</li>
+    <section id="stack" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="flex-1">
+                    <h2 class="text-5xl font-black text-white mb-6 italic tracking-tighter leading-none">The Engine <br><span class="text-indigo-600">Specifications.</span></h2>
+                    <p class="text-slate-400 mb-8 max-w-md">No elijo herramientas por moda, sino por su capacidad para resolver el problema con la menor deuda técnica posible.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl mono text-xs">
+                            <span class="text-indigo-400 font-bold tracking-tighter">> PHP 8.3 + Symfony 7</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl mono text-xs">
+                            <span class="text-indigo-400 font-bold tracking-tighter">> Architecture DDD / Hexagonal</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl mono text-xs">
+                            <span class="text-indigo-400 font-bold tracking-tighter">> Docker / K8s / CI-CD</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-2xl mono text-xs">
+                            <span class="text-indigo-400 font-bold tracking-tighter">> PostgreSQL / Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 bg-indigo-600/5 p-12 rounded-[3rem] border border-indigo-500/10 shadow-inner">
+                    <h4 class="mono text-indigo-400 text-sm font-bold mb-6 italic tracking-widest">// Technical_Manifesto</h4>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="text-indigo-500 font-bold">#01</span>
+                            <p class="text-sm text-slate-300">**Clean Code:** El código se lee más veces de las que se escribe. Legibilidad ante todo.</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-indigo-500 font-bold">#02</span>
+                            <p class="text-sm text-slate-300">**Testing Culture:** Sin tests, es solo esperanza. Uso de PHPUnit y Pest como garantía de despliegue.</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-indigo-500 font-bold">#03</span>
+                            <p class="text-indigo-500 italic">**SOLID Principles as a standard.**</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="section contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Contact Us</h4>
-                        <form id="contact-form" action="https://formspree.io/f/xyzypvqj" method="POST">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <p>If you'd like to collaborate, have a project in mind, or just want to say hello, feel free to reach out!</p>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">(+ 34 ) 695 635 553</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted"> Madrid, Spain</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">vadillovaldesalvaro@gmail.com</span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <footer id="contact" class="py-32 relative bg-slate-950 border-t border-slate-900 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-5xl font-black text-white mb-8 tracking-tighter italic uppercase">Ready for the next <span class="text-indigo-500 underline decoration-indigo-500/20">Legacy</span>?</h2>
+            <p class="text-slate-500 mb-12 text-lg mono tracking-tight tracking-tighter italic">// vadillovaldesalvaro@gmail.com</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="mailto:vadillovaldesalvaro@gmail.com" class="bg-indigo-600 px-12 py-5 rounded-full font-extrabold text-white hover:bg-indigo-500 transition-all shadow-xl shadow-indigo-600/20">CONECTAR_AHORA.sh</a>
+                <a href="https://linkedin.com/in/alvaro-vadillo-valdes/" target="_blank" class="bg-slate-900 border border-slate-800 px-12 py-5 rounded-full font-extrabold text-white hover:bg-slate-800 transition-all">LINKEDIN_PROFILE</a>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="whoAmIModal" tabindex="-1" aria-labelledby="whoAmILabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="whoAmILabel">Who am I?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>I am a passionate PHP programmer and web developer with a focus on creating innovative and efficient solutions for online projects. From a young age, I discovered my fascination with technology and how it can positively impact our lives and the world around us.</p>
-                    <p>With a strong background in programming and web development, I have spent years honing my skills in various technologies like HTML, CSS, JavaScript, and of course, PHP. I have worked on a variety of projects, from small web applications to complex content management systems.</p>
-                    <p>My approach goes beyond just writing code. I strive to understand the needs of the end user and work closely with multidisciplinary teams to design and develop solutions that are not only functional but also intuitive and visually appealing.</p>
-                    <p>I consider myself a lifelong learner and am always looking for new opportunities to expand my knowledge and skills in the world of web development. I love tackling challenges and finding creative ways to solve complex problems.</p>
-                    <p>I am excited to continue growing and contributing to the exciting world of web development and programming. I look forward to collaborating with you on future projects and continuing to learn together!</p>
-                    <p>Thank you for taking the time to get to know me a little better!</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <span class="text-danger" title="Creator">AAVV Web</span>
+        
+        <div class="mt-40 text-center opacity-30">
+            <p class="mono text-[9px] text-slate-500 uppercase tracking-[0.6em]">
+                &copy; 2026 Álvaro Vadillo Valdés // Symfony Core // CQM Rewards Developer
             </p>
         </div>
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-indigo-600/10 blur-[150px] rounded-full"></div>
     </footer>
-
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-    <!-- js -->
-    <script src="assets/js/aavv.js"></script>
-
 
 </body>
 </html>
